@@ -19,6 +19,7 @@ class ListarLivros implements InterfaceControladorRequisicao
   public function processaRequisicao(): void
   {
     $livros = $this->repositorioDeLivros->findall();
+    $titulo = 'Lista Livros';
     require __DIR__ . '/../../view/Livros/listar-livros.php';
   }
 }
