@@ -2,7 +2,7 @@
 
 namespace Gerenciamento\Livros\Controller;
 
-use Gerenciamento\Armazenamento\Entity\Usuario;
+use Gerenciamento\Livros\Entity\Livros;
 
 class FormularioLogin extends ControllerCaminho implements InterfaceControladorRequisicao
 {

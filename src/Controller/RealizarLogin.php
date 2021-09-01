@@ -35,6 +35,9 @@ class RealizarLogin extends ControllerCaminho implements InterfaceControladorReq
       echo "E-mail ou senha inválido";
       return;
     }
+
+    $_SESSION['logado'] = true;
+
     header('Location: /listar-livros');
   }
 }
