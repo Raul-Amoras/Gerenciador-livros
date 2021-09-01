@@ -6,7 +6,7 @@ use Gerenciamento\Livros\Infra\EntityManagerCreator;
 use Gerenciamento\Livros\Entity\Livros;
 
 
-class ListarLivros implements InterfaceControladorRequisicao
+class ListarLivros extends ControllerCaminho implements InterfaceControladorRequisicao
 {
   private $repositorioDeLivros;
   public function __construct()
@@ -19,7 +19,9 @@ class ListarLivros implements InterfaceControladorRequisicao
   public function processaRequisicao(): void
   {
     $livros = $this->repositorioDeLivros->findall();
-    $titulo = 'Lista Livros';
-    require __DIR__ . '/../../view/Livros/listar-livros.php';
+    echo $this->renderizaHtml('Livros/listar-livros.php', [
+      'livros' => $livros,
+      'titulo' => 'Lista Livros'
+    ]);
   }
 }

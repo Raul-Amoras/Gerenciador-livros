@@ -5,7 +5,7 @@ namespace Gerenciamento\Livros\Controller;
 use Gerenciamento\Livros\Entity\Livros;
 use Gerenciamento\Livros\Infra\EntityManagerCreator;
 
-class FormularioEdicao implements InterfaceControladorRequisicao
+class FormularioEdicao extends ControllerCaminho implements InterfaceControladorRequisicao
 {
 
   private $repositorioLivros;
@@ -29,7 +29,9 @@ class FormularioEdicao implements InterfaceControladorRequisicao
       return;
     }
     $livro = $this->repositorioLivros->find($id);
-    $titulo = 'Alterar' . ' ' . $livro->getNome();
-    require __DIR__ . '/../../view/Livros/formulario.php';
+    echo $this->renderizaHtml('Livros/formulario.php', [
+      'livro' => $livro,
+      'titulo' => 'Alterar' . ' ' . $livro->getNome()
+    ]);
   }
 }

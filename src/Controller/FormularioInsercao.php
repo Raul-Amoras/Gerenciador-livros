@@ -2,11 +2,12 @@
 
 namespace Gerenciamento\Livros\Controller;
 
-class FormularioInsercao implements InterfaceControladorRequisicao
+class FormularioInsercao extends ControllerCaminho implements InterfaceControladorRequisicao
 {
   public function processaRequisicao(): void
   {
-    $titulo = 'Novo Livro';
-    require __DIR__ . '/../../view/Livros/formulario.php';
+    echo $this->renderizaHtml('Livros/formulario.php', [
+      'titulo' => 'Novo Livro'
+    ]);
   }
 }
