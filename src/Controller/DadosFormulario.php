@@ -18,10 +18,11 @@ class DadosFormulario implements InterfaceControladorRequisicao
   public function processaRequisicao(): void
   {
 
+    $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
     $livroNome = new Livros();
     $livroAutor = new Livros();
     $livroData = new Livros();
-    $livroNome->setNome($_POST['nome']);
+    $livroNome->setNome($nome);
     $livroAutor->setAutor($_POST['autor']);
     $livroData->setDataCadastro(date_default_timezone_set('UTC'));
     $this->entityManeger->persist($livroNome);
