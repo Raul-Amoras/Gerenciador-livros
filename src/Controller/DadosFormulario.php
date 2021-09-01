@@ -27,5 +27,7 @@ class DadosFormulario implements InterfaceControladorRequisicao
     $livroData->setDataCadastro(date_default_timezone_set('UTC'));
     $this->entityManeger->persist($livroNome);
     $this->entityManeger->flush();
+
+    header('Location: /listar-livros', false, 302);
   }
 }
