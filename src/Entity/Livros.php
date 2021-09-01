@@ -19,6 +19,10 @@ class Livros
    */
   private $nome;
   /**
+   * @Column(type="string")
+   */
+  private $autor;
+  /**
    * @GeneratedValue
    * @Column(type="string")
    */
@@ -42,6 +46,16 @@ class Livros
   public function setNome(string $nome): void
   {
     $this->nome = $nome;
+  }
+
+  public function getAutor(): string
+  {
+    return $this->autor;
+  }
+
+  public function setAutor(string $autor): void
+  {
+    $this->autor = $autor;
   }
 
   public function getDataCadastro(): string
