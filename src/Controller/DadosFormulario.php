@@ -19,13 +19,21 @@ class DadosFormulario implements InterfaceControladorRequisicao
   {
 
     $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
-    $livroNome = new Livros();
-    $livroAutor = new Livros();
-    $livroData = new Livros();
-    $livroNome->setNome($nome);
-    $livroAutor->setAutor($_POST['autor']);
-    $livroData->setDataCadastro(date_default_timezone_set('UTC'));
-    $this->entityManeger->persist($livroNome);
+    $livro = new Livros();
+    $livro->setNome($nome);
+
+    $id = filter_input(
+      INPUT_GET,
+      'id',
+      FILTER_VALIDATE_INT
+    );
+
+    if (!is_null($id) && $id !== false) {
+      $livro->setId($id);
+      $this->entityManeger->merge($livro);
+    } else {
+      $this->entityManeger->persist($livro);
+    }
     $this->entityManeger->flush();
 
     header('Location: /listar-livros', false, 302);
