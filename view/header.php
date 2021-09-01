@@ -8,6 +8,15 @@
 </head>
 
 <body>
+
+  <?php if (isset($_SESSION['logado'])) : ?>
+    <nav class="navbar navbar-dark bg-dark mb-2">
+      <a class="flex-sm-fill text-sm-center" href="/listar-livros">Home</a>
+      <a class="flex-sm-fill text-sm-center" href="/logout">Sair</a>
+
+    </nav>
+  <?php endif; ?>
+
   <div class="container">
     <div class="jumbotron">
       <h1><?= $titulo; ?></h1>
