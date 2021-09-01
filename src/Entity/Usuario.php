@@ -1,6 +1,6 @@
 <?php
 
-namespace Gerenciamento\Armazenamento\Entity;
+namespace Gerenciamento\Livros\Entity;
 
 /**
  * @Entity
@@ -27,4 +27,9 @@ class Usuario
     {
         return password_verify($senhaPura, $this->senha);
     }
+
+    /**
+     * @Column(type="string")
+     */
+    private $isAdm;
 }
