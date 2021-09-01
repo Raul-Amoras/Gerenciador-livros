@@ -6,6 +6,7 @@ use Gerenciamento\Livros\Controller\DadosFormulario;
 use Gerenciamento\Livros\Controller\Exclusao;
 use Gerenciamento\Livros\Controller\FormularioEdicao;
 use Gerenciamento\Livros\Controller\FormularioLogin;
+use Gerenciamento\Livros\Controller\Logout;
 use Gerenciamento\Livros\Controller\RealizarLogin;
 
 
@@ -16,7 +17,8 @@ $rotas = [
   '/excluir-livro'   => Exclusao::class,
   '/atualizar-livro' => FormularioEdicao::class,
   '/login'           => FormularioLogin::class,
-  '/realizar-login'  => RealizarLogin::class
+  '/realizar-login'  => RealizarLogin::class,
+  '/logout'          => Logout::class
 ];
 
 return $rotas;
