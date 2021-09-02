@@ -27,7 +27,7 @@ $ cd Gerenciador-livros
 
 Para iniciá-lo, siga os passos abaixo:
 
-Acesse a pasta do projeto com o Prompt de Comando e execute os comandos abaixo: 
+Acesse a pasta do projeto com o Prompt de Comando e execute os comandos: 
 
 ```bash
 # Instalar as dependências
