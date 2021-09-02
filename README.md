@@ -45,6 +45,7 @@ O app estará disponível no seu browser pelo endereço http://localhost:3333/lo
 Para realizar o login, utilizer as seguintes informações:
 
 E-mail: admin@gmail.com
+
  Senha: adm
 
 
