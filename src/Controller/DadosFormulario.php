@@ -31,9 +31,13 @@ class DadosFormulario implements InterfaceControladorRequisicao
     if (!is_null($id) && $id !== false) {
       $livro->setId($id);
       $this->entityManeger->merge($livro);
+      $_SESSION['Mensagem'] = "Livro atualizado com Sucesso";
     } else {
       $this->entityManeger->persist($livro);
+      $_SESSION['Mensagem'] = "Livro inserido com Sucesso";
     }
+    $_SESSION['tipoMensagem'] = 'success';
+
     $this->entityManeger->flush();
 
     header('Location: /listar-livros', false, 302);
