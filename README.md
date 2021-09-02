@@ -56,7 +56,19 @@ Você pode visualizar o layout do projeto através do link abaixo:
 ## Login
 <img width="953" alt="sobre" src="https://github.com/Raul-Amoras/Gerenciador-livros/blob/main/view/imagens/1.TelaLogin.png">
  <hr>
+ 
+## Cadastro Usuário 
+ <img width="953" alt="sobre" src="https://github.com/Raul-Amoras/Gerenciador-livros/blob/main/view/imagens/2.TelaCadastroUsuario.png">
+ <hr>
+ 
+ ## Lista de Livros
+<img width="953" alt="sobre" src="https://github.com/Raul-Amoras/Gerenciador-livros/blob/main/view/imagens/3.TelaListaLivros.png">
+<hr>
 
-- [Layout Web]()
+ ## Atualizar Cadastro Livros
+ <img width="953" alt="sobre" src="https://github.com/Raul-Amoras/Gerenciador-livros/blob/main/view/imagens/4.TelaAlteraLivros.png">
+ <hr>
+
+
 
 
