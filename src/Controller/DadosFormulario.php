@@ -18,9 +18,13 @@ class DadosFormulario implements InterfaceControladorRequisicao
   public function processaRequisicao(): void
   {
 
-    $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
+    $nome  = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
+    $autor = filter_input(INPUT_POST, 'autor', FILTER_SANITIZE_STRING);
+
     $livro = new Livros();
     $livro->setNome($nome);
+    $livro->setAutor($autor);
+    $livro->setDataCadastro();
 
     $id = filter_input(
       INPUT_GET,

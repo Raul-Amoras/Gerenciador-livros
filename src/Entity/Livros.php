@@ -2,6 +2,8 @@
 
 namespace Gerenciamento\Livros\Entity;
 
+use DateTime;
+
 /**
  * @Entity
  * @Table(name="livros")
@@ -23,8 +25,7 @@ class Livros
    */
   private $autor;
   /**
-   * @GeneratedValue
-   * @Column(type="string")
+   * @Column(type="datetime")
    */
   private $dataCadastro;
 
@@ -58,13 +59,13 @@ class Livros
     $this->autor = $autor;
   }
 
-  public function getDataCadastro(): string
+  public function getDataCadastro()
   {
     return $this->dataCadastro;
   }
 
-  public function setDataCadastro(string $dataCadastro): void
+  public function setDataCadastro()
   {
-    $this->dataCadastro = $dataCadastro;
+    $this->dataCadastro = new \DateTime("now");
   }
 }

@@ -1,5 +1,5 @@
 <?php include __DIR__ . '/../header.php'; ?>
-<form action="/realizar-login" method="post">
+<form action="" method="post">
   <div class="form-group">
     <label for="email">E-mail</label>
     <input type="email" name="email" class="form-control">
