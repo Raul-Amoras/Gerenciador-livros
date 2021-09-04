@@ -27,7 +27,7 @@ $ cd Gerenciador-livros
 
 Para iniciá-lo, siga os passos abaixo:
 
-Acesse a pasta do projeto com o Prompt de Comando e execute os comandos abaixo: 
+Acesse a pasta do projeto com o Prompt de Comando e execute os comandos: 
 
 ```bash
 # Instalar as dependências
@@ -45,6 +45,7 @@ O app estará disponível no seu browser pelo endereço http://localhost:3333/lo
 Para realizar o login, utilizer as seguintes informações:
 
 E-mail: admin@gmail.com
+
  Senha: adm
 
 
@@ -53,6 +54,22 @@ E-mail: admin@gmail.com
 
 Você pode visualizar o layout do projeto através do link abaixo:
 
-- [Layout Web]()
+## Login
+<img width="953" alt="sobre" src="https://github.com/Raul-Amoras/Gerenciador-livros/blob/main/view/imagens/1.TelaLogin.png">
+ <hr>
+ 
+## Cadastro Usuário 
+ <img width="953" alt="sobre" src="https://github.com/Raul-Amoras/Gerenciador-livros/blob/main/view/imagens/2.TelaCadastroUsuario.png">
+ <hr>
+ 
+ ## Lista de Livros
+<img width="953" alt="sobre" src="https://github.com/Raul-Amoras/Gerenciador-livros/blob/main/view/imagens/3.TelaListaLivros.png">
+<hr>
+
+ ## Atualizar Cadastro Livros
+ <img width="953" alt="sobre" src="https://github.com/Raul-Amoras/Gerenciador-livros/blob/main/view/imagens/4.TelaAlteraLivros.png">
+ <hr>
+
+
 
 
